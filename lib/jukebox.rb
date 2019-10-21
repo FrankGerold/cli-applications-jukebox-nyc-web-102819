@@ -6,7 +6,7 @@ def help
   puts '- exit : exits this program'
 end
   
-def list
+def list(songs)
   songs.each_with_index {|song, index| puts "#{index+1}. #{song}"}
 end 
 
