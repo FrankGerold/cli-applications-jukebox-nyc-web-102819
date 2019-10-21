@@ -27,6 +27,7 @@ def exit_jukebox
 end
 
 def run(songs)
+  user_response = ""
   until user_response == 'exit'
     puts "Please enter a command:"
     user_response = gets.strip
