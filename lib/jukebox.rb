@@ -13,10 +13,20 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   user_response = gets.strip
+<<<<<<< HEAD
   if  song_array.include?(user_response.to_s)
       puts "Playing #{user_response.to_s}"
   elsif song_array[user_response.to_i - 1]
       puts "Playing #{song_array[user_response.to_i - 1]}"
+=======
+  if user_response.class == String
+    if song_array.include?(user_response)
+      puts "Playing #{user_response}"
+    end
+  elsif song_array[user_response.to_i - 1]
+      puts "Playing #{song_array[user_response - 1]}"
+    end
+>>>>>>> ea873b0f9ec030e09773401ad2ffd7fb98045e26
   else
    puts "Invalid input, please try again"
  end
